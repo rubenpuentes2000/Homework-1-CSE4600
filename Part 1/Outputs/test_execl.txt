@@ -1,0 +1,224 @@
+thomas-c@thomasc-VirtualBox:~/Desktop/School Programs/Homework 1/Part 1/Custom Code$ ./test_execl
+Running ps with execl!
+    PID TTY      STAT   TIME COMMAND
+      1 ?        Ss     0:01 /sbin/init splash
+      2 ?        S      0:00 [kthreadd]
+      3 ?        I<     0:00 [rcu_gp]
+      4 ?        I<     0:00 [rcu_par_gp]
+      6 ?        I<     0:00 [kworker/0:0H-events_highpri]
+      9 ?        I<     0:00 [mm_percpu_wq]
+     10 ?        S      0:00 [rcu_tasks_rude_]
+     11 ?        S      0:00 [rcu_tasks_trace]
+     12 ?        S      0:00 [ksoftirqd/0]
+     13 ?        R      0:00 [rcu_sched]
+     14 ?        S      0:00 [migration/0]
+     15 ?        S      0:00 [idle_inject/0]
+     16 ?        S      0:00 [cpuhp/0]
+     17 ?        S      0:00 [kdevtmpfs]
+     18 ?        I<     0:00 [netns]
+     19 ?        I<     0:00 [inet_frag_wq]
+     20 ?        S      0:00 [kauditd]
+     21 ?        S      0:00 [khungtaskd]
+     22 ?        S      0:00 [oom_reaper]
+     23 ?        I<     0:00 [writeback]
+     24 ?        S      0:00 [kcompactd0]
+     25 ?        SN     0:00 [ksmd]
+     26 ?        SN     0:00 [khugepaged]
+     72 ?        I<     0:00 [kintegrityd]
+     73 ?        I<     0:00 [kblockd]
+     74 ?        I<     0:00 [blkcg_punt_bio]
+     75 ?        I<     0:00 [tpm_dev_wq]
+     76 ?        I<     0:00 [ata_sff]
+     77 ?        I<     0:00 [md]
+     78 ?        I<     0:00 [edac-poller]
+     79 ?        I<     0:00 [devfreq_wq]
+     80 ?        S      0:00 [watchdogd]
+     81 ?        I      0:01 [kworker/u2:1-events_power_efficient]
+     82 ?        I<     0:00 [kworker/0:1H-kblockd]
+     84 ?        S      0:00 [kswapd0]
+     85 ?        S      0:00 [ecryptfs-kthrea]
+     87 ?        I<     0:00 [kthrotld]
+     88 ?        I<     0:00 [acpi_thermal_pm]
+     90 ?        S      0:00 [scsi_eh_0]
+     91 ?        I<     0:00 [scsi_tmf_0]
+     92 ?        S      0:00 [scsi_eh_1]
+     93 ?        I<     0:00 [scsi_tmf_1]
+     94 ?        R      0:00 [kworker/u2:3-events_unbound]
+     95 ?        I<     0:00 [vfio-irqfd-clea]
+     96 ?        I<     0:00 [mld]
+     97 ?        I<     0:00 [ipv6_addrconf]
+    108 ?        I<     0:00 [kstrp]
+    111 ?        I<     0:00 [zswap-shrink]
+    112 ?        I<     0:00 [kworker/u3:0]
+    117 ?        I<     0:00 [charger_manager]
+    159 ?        S      0:00 [scsi_eh_2]
+    160 ?        I<     0:00 [scsi_tmf_2]
+    186 ?        S      0:00 [jbd2/sda5-8]
+    187 ?        I<     0:00 [ext4-rsv-conver]
+    231 ?        S<s    0:00 /lib/systemd/systemd-journald
+    257 ?        S<     0:00 [loop0]
+    258 ?        S<     0:00 [loop1]
+    260 ?        S<     0:00 [loop2]
+    261 ?        I<     0:00 [ttm_swap]
+    262 ?        S      0:00 [irq/18-vmwgfx]
+    263 ?        S      0:00 [card0-crtc0]
+    264 ?        S      0:00 [card0-crtc1]
+    265 ?        S      0:00 [card0-crtc2]
+    266 ?        S      0:00 [card0-crtc3]
+    267 ?        S      0:00 [card0-crtc4]
+    268 ?        S      0:00 [card0-crtc5]
+    269 ?        S      0:00 [card0-crtc6]
+    270 ?        S      0:00 [card0-crtc7]
+    272 ?        S<     0:00 [loop3]
+    274 ?        S<     0:00 [loop4]
+    276 ?        S<     0:00 [loop5]
+    278 ?        S<     0:00 [loop6]
+    281 ?        S<     0:00 [loop7]
+    284 ?        S<     0:00 [loop8]
+    287 ?        S<     0:00 [loop9]
+    289 ?        S<     0:00 [loop10]
+    290 ?        S<     0:00 [loop11]
+    291 ?        S<     0:00 [loop12]
+    293 ?        Ss     0:00 /lib/systemd/systemd-udevd
+    297 ?        S<     0:00 [loop13]
+    330 ?        I<     0:00 [cryptd]
+    358 ?        I<     0:00 [iprt-VBoxWQueue]
+    525 ?        Ss     0:00 /lib/systemd/systemd-resolved
+    526 ?        Ssl    0:00 /lib/systemd/systemd-timesyncd
+    563 ?        Ssl    0:00 /usr/lib/accountsservice/accounts-daemon
+    564 ?        Ss     0:00 /usr/sbin/acpid
+    567 ?        Ss     0:00 avahi-daemon: running [thomasc-VirtualBox.local]
+    568 ?        Ss     0:00 /usr/sbin/cron -f
+    570 ?        Ss     0:00 /usr/bin/dbus-daemon --system --address=systemd: --
+    571 ?        Ssl    0:00 /usr/sbin/NetworkManager --no-daemon
+    579 ?        Ss     0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run
+    580 ?        Ssl    0:00 /usr/lib/policykit-1/polkitd --no-debug
+    582 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+    583 ?        Ssl    0:00 /usr/lib/snapd/snapd
+    585 ?        Ssl    0:00 /usr/libexec/switcheroo-control
+    590 ?        Ss     0:00 /lib/systemd/systemd-logind
+    594 ?        Ss     0:00 /lib/systemd/systemd-machined
+    596 ?        Ssl    0:00 /usr/lib/udisks2/udisksd
+    598 ?        Ss     0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+    610 ?        S      0:00 avahi-daemon: chroot helper
+    681 ?        Ss     0:00 /usr/sbin/cupsd -l
+    689 ?        Ssl    0:00 /usr/sbin/cups-browsed
+    709 ?        Ssl    0:00 /usr/sbin/ModemManager
+    717 ?        Ssl    0:00 /usr/sbin/libvirtd
+    720 ?        Ssl    0:00 /usr/bin/python3 /usr/share/unattended-upgrades/una
+    793 ?        Ssl    0:00 /usr/bin/whoopsie -f
+    797 ?        Ss     0:00 /usr/sbin/kerneloops --test
+    799 ?        Ss     0:00 /usr/sbin/kerneloops
+    892 ?        S      0:00 bpfilter_umh
+   1013 ?        S      0:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsm
+   1014 ?        S      0:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsm
+   1103 ?        Ssl    0:00 /usr/sbin/gdm3
+   1111 ?        Sl     0:00 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-se
+   1121 ?        Sl     0:00 gdm-session-worker [pam/gdm-autologin]
+   1126 ?        Ss     0:00 /lib/systemd/systemd --user
+   1127 ?        S      0:00 (sd-pam)
+   1132 ?        S<sl   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=jou
+   1135 ?        SNsl   0:00 /usr/libexec/tracker-miner-fs
+   1137 ?        SLl    0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+   1141 tty2     Ssl+   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_
+   1143 tty2     Sl+    0:06 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user
+   1144 ?        SNsl   0:00 /usr/libexec/rtkit-daemon
+   1148 ?        Ss     0:00 /usr/bin/dbus-daemon --session --address=systemd: -
+   1152 ?        Ssl    0:00 /usr/libexec/gvfsd
+   1157 ?        Sl     0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o b
+   1165 ?        Ssl    0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+   1173 ?        Ssl    0:00 /usr/libexec/gvfs-goa-volume-monitor
+   1177 ?        Sl     0:00 /usr/libexec/goa-daemon
+   1198 ?        Sl     0:00 /usr/libexec/goa-identity-service
+   1200 ?        Ssl    0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+   1208 ?        Ssl    0:00 /usr/libexec/gvfs-afc-volume-monitor
+   1213 ?        Ssl    0:00 /usr/libexec/gvfs-mtp-volume-monitor
+   1218 ?        Ssl    0:00 /usr/lib/upower/upowerd
+   1240 tty2     Sl+    0:00 /usr/libexec/gnome-session-binary --systemd --syste
+   1311 ?        S      0:00 /usr/bin/VBoxClient --clipboard
+   1312 ?        Sl     0:00 /usr/bin/VBoxClient --clipboard
+   1326 ?        S      0:00 /usr/bin/VBoxClient --draganddrop
+   1327 ?        Sl     0:00 /usr/bin/VBoxClient --draganddrop
+   1331 ?        S      0:00 /usr/bin/VBoxClient --vmsvga
+   1332 ?        Sl     0:00 /usr/bin/VBoxClient --vmsvga
+   1333 ?        S      0:00 /usr/bin/VBoxClient --seamless
+   1334 ?        Sl     0:00 /usr/bin/VBoxClient --seamless
+   1346 ?        Ss     0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHE
+   1365 ?        Ssl    0:00 /usr/libexec/at-spi-bus-launcher
+   1371 ?        S      0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defau
+   1378 ?        Ssl    0:00 /usr/libexec/gnome-session-ctl --monitor
+   1385 ?        Ssl    0:00 /usr/libexec/gnome-session-binary --systemd-service
+   1399 ?        Ssl    0:14 /usr/bin/gnome-shell
+   1425 ?        Sl     0:00 ibus-daemon --panel disable --xim
+   1429 ?        Sl     0:00 /usr/libexec/ibus-memconf
+   1430 ?        Sl     0:01 /usr/libexec/ibus-extension-gtk3
+   1434 ?        Sl     0:00 /usr/libexec/ibus-x11 --kill-daemon
+   1437 ?        Sl     0:00 /usr/libexec/ibus-portal
+   1447 ?        Sl     0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+   1451 ?        Ssl    0:00 /usr/libexec/xdg-permission-store
+   1456 ?        Sl     0:00 /usr/libexec/gnome-shell-calendar-server
+   1462 ?        Ssl    0:00 /usr/libexec/evolution-source-registry
+   1472 ?        Ssl    0:00 /usr/libexec/evolution-calendar-factory
+   1486 ?        Sl     0:00 /usr/libexec/dconf-service
+   1494 ?        Ssl    0:00 /usr/libexec/evolution-addressbook-factory
+   1511 ?        Sl     0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell
+   1517 ?        Sl     0:00 /usr/libexec/gvfsd-trash --spawner :1.4 /org/gtk/gv
+   1527 ?        Ssl    0:00 /usr/libexec/gsd-a11y-settings
+   1528 ?        Ssl    0:00 /usr/libexec/gsd-color
+   1531 ?        Ssl    0:00 /usr/libexec/gsd-datetime
+   1532 ?        Ssl    0:00 /usr/libexec/gsd-housekeeping
+   1533 ?        Ssl    0:00 /usr/libexec/gsd-keyboard
+   1537 ?        Ssl    0:00 /usr/libexec/gsd-media-keys
+   1538 ?        Ssl    0:00 /usr/libexec/gsd-power
+   1539 ?        Ssl    0:00 /usr/libexec/gsd-print-notifications
+   1540 ?        Ssl    0:00 /usr/libexec/gsd-rfkill
+   1541 ?        Ssl    0:00 /usr/libexec/gsd-screensaver-proxy
+   1542 ?        Ssl    0:00 /usr/libexec/gsd-sharing
+   1543 ?        Ssl    0:00 /usr/libexec/gsd-smartcard
+   1544 ?        Ssl    0:00 /usr/libexec/gsd-sound
+   1545 ?        Ssl    0:00 /usr/libexec/gsd-usb-protection
+   1558 ?        Sl     0:00 /usr/libexec/evolution-data-server/evolution-alarm-
+   1559 ?        Ssl    0:00 /usr/libexec/gsd-wacom
+   1560 ?        Ssl    0:00 /usr/libexec/gsd-wwan
+   1566 ?        Ssl    0:00 /usr/libexec/gsd-xsettings
+   1592 ?        Sl     0:00 /usr/libexec/gsd-disk-utility-notify
+   1628 ?        Ssl    0:00 /usr/libexec/colord
+   1634 ?        Sl     0:00 /usr/libexec/gsd-printer
+   1703 ?        Ssl    0:00 /usr/libexec/xdg-document-portal
+   1715 ?        Sl     0:00 /usr/libexec/ibus-engine-simple
+   1802 ?        I      0:00 [kworker/0:3-cgroup_destroy]
+   1803 ?        I      0:00 [kworker/0:4-events]
+   1820 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal
+   1824 ?        Ssl    0:00 /usr/libexec/xdg-desktop-portal-gtk
+   1858 ?        Sl     0:02 /usr/bin/nautilus --gapplication-service
+   1869 ?        Ssl    0:00 /usr/libexec/gvfsd-metadata
+   1874 ?        Sl     0:00 update-notifier
+   1912 ?        SLl    0:04 /usr/share/code/code --unity-launch
+   1918 ?        S      0:00 /usr/share/code/code --type=zygote --no-zygote-sand
+   1919 ?        S      0:00 /usr/share/code/code --type=zygote
+   1921 ?        S      0:00 /usr/share/code/code --type=zygote
+   1963 ?        Sl     0:00 /usr/share/code/code --type=utility --utility-sub-t
+   1964 ?        Sl     0:03 /usr/share/code/code --type=gpu-process --field-tri
+   1975 ?        S      0:00 /usr/share/code/code --type=broker
+   1985 ?        Sl     0:16 /usr/share/code/code --type=renderer --disable-colo
+   2019 ?        Sl     0:03 /usr/share/code/code --ms-enable-electron-run-as-no
+   2032 ?        Sl     0:03 /usr/share/code/code --type=renderer --disable-colo
+   2048 ?        Sl     0:01 /usr/share/code/code --ms-enable-electron-run-as-no
+   2083 ?        Sl     0:00 /usr/share/code/code --ms-enable-electron-run-as-no
+   2118 ?        Sl     0:00 /home/thomas-c/.vscode/extensions/ms-vscode.cpptool
+   2159 pts/0    Ss+    0:00 /bin/bash
+   2162 ?        Sl     0:00 /usr/share/code/code --ms-enable-electron-run-as-no
+   2177 pts/1    Ss+    0:00 /usr/bin/bash
+   2185 pts/2    Ss+    0:00 /usr/bin/bash
+   2192 pts/3    Ss+    0:00 /usr/bin/bash
+   2389 ?        Sl     0:01 /home/thomas-c/.config/Code/User/globalStorage/tabn
+   2437 ?        Sl     0:00 /home/thomas-c/.config/Code/User/globalStorage/tabn
+   2464 ?        Sl     0:00 /home/thomas-c/.config/Code/User/globalStorage/tabn
+   2667 pts/4    Ss+    0:00 /usr/bin/bash
+   2675 ?        Sl     0:00 /home/thomas-c/.vscode/extensions/ms-vscode.cpptool
+   2744 ?        Ss     0:00 /lib/systemd/systemd-hostnamed
+   2748 ?        Ssl    0:00 /usr/libexec/gnome-terminal-server
+   2755 pts/5    Ss     0:00 bash
+   2761 ?        I      0:00 [kworker/u2:0]
+   2762 ?        I      0:00 [kworker/u2:2-ext4-rsv-conversion]
+   2781 pts/5    R+     0:00 /bin/ps -ax
